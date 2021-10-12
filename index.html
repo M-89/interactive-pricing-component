@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <main>
+      <form action="">
+        <div id="views-and-pricing">
+          <label for="pageviews-slider">
+            <span id="pageviews-text">100K pageviews</span>
+            <input
+              id="input-visible-mobile"
+              type="range"
+              min="1"
+              max="5"
+              value="3"
+              class="slider gradient"
+              name="pageviews-slider"
+            />
+            <span id="pricing-per-month"
+              ><span id="price">$16.00</span> / month</span
+            >
+          </label>
+          <input
+            id="input-visible-desktop"
+            type="range"
+            min="1"
+            max="5"
+            value="3"
+            class="slider gradient"
+            name="pageviews-slider"
+          />
+        </div>
+        <div id="billing-and-discount">
+          <label for="switch">Monthly Billing</label>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="toggle"></span>
+          </label>
+          <label for="switch"
+            >Yearly Billing <span id="discount">- 25%</span></label
+          >
+        </div>
+
+        <div id="list-and-cta">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <a href="#" id="start-trial"> Start my trial</a>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/M-89" target="_blank">Matthieu</a>.
+      </div>
+    </footer>
+  </body>
+</html>
